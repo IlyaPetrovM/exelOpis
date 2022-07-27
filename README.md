@@ -2,7 +2,7 @@
 Макрос для работы с файлами и описи медиафайлов
 
 ## Требования
-1. Windows 7 и выше (тестировалось на 7, 10 и 11)
+1. Windows 7 и выше (x64)
 2. Microsoft Office Excel 2016 и выше
 3. Windows Media Player
 4.  VisualBasic в комплекте установки с MS Office
