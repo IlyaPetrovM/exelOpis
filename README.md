@@ -8,11 +8,19 @@
 4.  VisualBasic в комплекте установки с MS Office
 
 ## Установка
+
+### Клиент 
 1. Скачайте архив exelOpis к себе на компьютер и распакуйте его
 2. Установите mysql-connector-odbc-5.1.13-winx64.msi
 3. Запустите exelOpis 
 4. Нажмите "Включить содержимое", чтобы макросы начали работать
-4. Согласитесь инициализировать элементы ActiveX (В окошке "This application is about to initialise ActiveX..."  - нажмите ОК)
+5. Согласитесь инициализировать элементы ActiveX (В окошке "This application is about to initialise ActiveX..."  - нажмите ОК)
+
+Если вы хотите создать свою базу данных, то необходимо создать сервер:
+### Сервер 
+1. Установите MariaDb или MySql
+2. Импортируйте в базу данных дамп: sites_metka_structure.sql
+` mysql -u <пользователь> -p<пароль> <название вашей БД> < sites_metka_structure.sql `
 
 ## Скриншоты
 ![Screenshot_1](https://user-images.githubusercontent.com/6277090/181240791-ab1b426b-6c85-4f2f-9494-dcaa615dcb08.jpg)
