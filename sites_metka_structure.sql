@@ -49,7 +49,7 @@ CREATE TABLE `files` (
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `update_date` BEFORE UPDATE ON `files` FOR EACH ROW begin
+/*!50003 CREATE TRIGGER `update_date` BEFORE UPDATE ON `files` FOR EACH ROW begin
 set new.date_updated = current_timestamp();
 end */;;
 DELIMITER ;
@@ -66,7 +66,7 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`sites_mahotin`@`localhost`*/ /*!50003 TRIGGER `Запрет редактировать название файла` BEFORE UPDATE ON `files` FOR EACH ROW BEGIN
+/*!50003 CREATE TRIGGER `Запрет редактировать название файла` BEFORE UPDATE ON `files` FOR EACH ROW BEGIN
 set new.old_filename = old.old_filename;
 set new.path = old.path;
 END */;;
