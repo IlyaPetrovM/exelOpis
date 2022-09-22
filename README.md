@@ -4,7 +4,7 @@
 # Требования
 1. Windows 7 и выше (x64)
 2. Microsoft Office Excel 2016 и выше
-3. Windows Media Player
+3. Windows Media Player [подробнее](https://support.microsoft.com/ru-ru/windows/%D0%BA%D0%B0%D0%BA-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BF%D1%80%D0%BE%D0%B8%D0%B3%D1%80%D1%8B%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C-windows-media-81718e0d-cfce-25b1-aee3-94596b658287)
 4.  VisualBasic в комплекте установки с MS Office
 
 # Установка
