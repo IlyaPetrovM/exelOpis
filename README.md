@@ -21,10 +21,13 @@
 ### Сервер 
 1. Установите MariaDb или MySql (скачать установщик можно по ссылке https://mariadb.org/download/)
 
-2. Импортируйте в структуру базы данных: sites_metka_structure.sql
+2. Создайте базу данных при помощи команды:
+`$ mysql -u <пользователь> -p<пароль> -e "create database <название вашей БД>" `
+
+3. Импортируйте в структуру базы данных: sites_metka_structure.sql
 Откройте консоль и перейдите в директорию с Дампом. 
 Введите нижеследующий текст
-` mysql -u <пользователь> -p<пароль> <название вашей БД> < sites_metka_structure.sql `
+`$ mysql -u <пользователь> -p<пароль> <название вашей БД> < sites_metka_structure.sql `
 
 # Скриншоты
 ![Screenshot_1](https://user-images.githubusercontent.com/6277090/181240791-ab1b426b-6c85-4f2f-9494-dcaa615dcb08.jpg)
