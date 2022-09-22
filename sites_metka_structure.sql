@@ -38,7 +38,7 @@ CREATE TABLE `files` (
   PRIMARY KEY (`id`),
   FULLTEXT KEY `tags` (`tags`),
   FULLTEXT KEY `old_filename` (`old_filename`)
-) ENGINE=InnoDB AUTO_INCREMENT=3524 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
@@ -116,7 +116,7 @@ CREATE TABLE `files_to_informants` (
   KEY `file_id` (`file_id`),
   CONSTRAINT `files_to_informants_ibfk_1` FOREIGN KEY (`inf_id`) REFERENCES `informants` (`id`),
   CONSTRAINT `files_to_informants_ibfk_2` FOREIGN KEY (`file_id`) REFERENCES `files` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=657 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -138,7 +138,7 @@ CREATE TABLE `format` (
   `FontSize` int(11) DEFAULT 11,
   `FontName` varchar(255) DEFAULT 'Calibri',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -160,7 +160,7 @@ CREATE TABLE `history` (
   PRIMARY KEY (`id`),
   FULLTEXT KEY `old_value` (`old_value`),
   FULLTEXT KEY `user` (`user`)
-) ENGINE=InnoDB AUTO_INCREMENT=24731 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -180,7 +180,7 @@ CREATE TABLE `informants` (
   `contacts` varchar(255) DEFAULT NULL,
   `hide` char(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=102 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -225,7 +225,7 @@ CREATE TABLE `marks` (
   FULLTEXT KEY `tags` (`tags`),
   FULLTEXT KEY `decription_of_file` (`describtion`),
   CONSTRAINT `marks_ibfk_1` FOREIGN KEY (`file_id`) REFERENCES `files` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3505 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -257,7 +257,7 @@ CREATE TABLE `test` (
   `f2` date NOT NULL,
   `f3` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
