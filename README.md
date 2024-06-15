@@ -8,6 +8,8 @@
 4.  VisualBasic в комплекте установки с MS Office
 
 # Установка
+Видео-инструкция
+https://www.youtube.com/watch?v=zPuwOGjPA6o
 ### Сервер 
 1. Установите MariaDb или MySql (скачать установщик можно по ссылке https://mariadb.org/download/)
 
