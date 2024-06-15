@@ -1,6 +1,5 @@
-Разработка проекта остановлена. 
-
-Создана новая версия программы в проекте [mediArch](https://github.com/IlyaPetrovM/mediArch)
+> # Разработка программы остановлена 
+> Доступна новая веб-версия: [mediArch](https://github.com/IlyaPetrovM/mediArch)
 
 # exelOpis
 Макрос для работы с файлами и описи медиафайлов
